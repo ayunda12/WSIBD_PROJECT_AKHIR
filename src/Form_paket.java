@@ -36,7 +36,6 @@ public class Form_paket extends javax.swing.JInternalFrame {
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         btntambah = new javax.swing.JButton();
-        btnrefresh = new javax.swing.JButton();
         btnedit = new javax.swing.JButton();
         btnhapus = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
@@ -67,7 +66,8 @@ public class Form_paket extends javax.swing.JInternalFrame {
             .addGap(0, 12, Short.MAX_VALUE)
         );
 
-        btntambah.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btntambah.setBackground(new java.awt.Color(102, 153, 255));
+        btntambah.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btntambah.setText("Tambah");
         btntambah.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,15 +75,8 @@ public class Form_paket extends javax.swing.JInternalFrame {
             }
         });
 
-        btnrefresh.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnrefresh.setText("Refresh");
-        btnrefresh.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnrefreshActionPerformed(evt);
-            }
-        });
-
-        btnedit.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnedit.setBackground(new java.awt.Color(255, 204, 51));
+        btnedit.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnedit.setText("Edit");
         btnedit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,7 +84,8 @@ public class Form_paket extends javax.swing.JInternalFrame {
             }
         });
 
-        btnhapus.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnhapus.setBackground(new java.awt.Color(255, 102, 102));
+        btnhapus.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnhapus.setText("Hapus");
         btnhapus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -99,7 +93,7 @@ public class Form_paket extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Cari ");
 
@@ -156,9 +150,7 @@ public class Form_paket extends javax.swing.JInternalFrame {
                         .addComponent(btnedit, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnhapus, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnrefresh, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 139, Short.MAX_VALUE)
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtcari, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -172,16 +164,14 @@ public class Form_paket extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnrefresh, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btntambah, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnedit, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnhapus, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(txtcari, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btntambah, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnedit, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnhapus, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtcari, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 205, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -203,10 +193,6 @@ public class Form_paket extends javax.swing.JInternalFrame {
         paket.setVisible(true);
         datatable();
     }//GEN-LAST:event_btntambahActionPerformed
-
-    private void btnrefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnrefreshActionPerformed
-        datatable();
-    }//GEN-LAST:event_btnrefreshActionPerformed
 
     private void btneditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneditActionPerformed
 
@@ -302,7 +288,6 @@ public class Form_paket extends javax.swing.JInternalFrame {
     }
 
     private void cariData(String key) {
-
         try {
 
             DefaultTableModel tbl = new DefaultTableModel();
@@ -336,7 +321,6 @@ public class Form_paket extends javax.swing.JInternalFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnedit;
     private javax.swing.JButton btnhapus;
-    private javax.swing.JButton btnrefresh;
     private javax.swing.JButton btntambah;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
